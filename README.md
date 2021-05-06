@@ -1,8 +1,5 @@
 # send-data-to-volkszaehler
 scripts for reading data and sending to volkszaehler middelware
 
-initial working commit with many things to fix:
--> Python 3 compability
--> use more functions (readserial.py)
--> remove rrd-stuff and sqlite-stuff from code
--> remove comments
+## send_to_volkszaehler.py
+This script read json files (from Fronius SolarAPI) and sends the data to the volkszähler middelware via http request. This script is triggerd via cronjob on the server, which is providing the FTP upload from the Fronius inverter.
